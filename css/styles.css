@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+:root{
+    --blue: #0096FF;
+}
+
+*.light-mode {
+    background-color: #fff;
+    color: #333;
+
+  }
+
+
+
+  *.dark-mode {
+    background-color: #111;
+    color: #fff;
+
+  }
+
+
+  .theme-toggle {
+
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+*{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: var(--blue);
+    color: #333;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #222;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--blue);
+}
+
+
+body{
+
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.btn{
+    padding: 1rem 3rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+.btn i{
+    padding: 0 .5rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover{
+    background-color: var(--blue);
+}
+
+.heading{
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .1rem solid;
+
+}
+
+body.light-mode .heading {
+  border-color: #fff4;
+}
+
+body.dark-mode .heading {
+  border-color: #333;
+}
+
+
+
+.heading span{
+    color: var(--blue);
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #b8b2b2;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+
+header{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .user img{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .7rem solid var(--blue);
+}
+
+header .user {
+    font-size: 2rem;
+
+}
+
+header  .navbar{
+    width: 100%;
+
+}
+
+header .navbar ul{
+    list-style: none;
+    padding: 1rem 3rem;
+
+}
+
+header .navbar ul li a{
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background-color: #110606;
+    color: #fff;
+
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+header .navbar ul li a:hover{
+    background: var(--blue);
+}
+
+#menu{
+    position: fixed;
+    top: 2rem; right: 2rem;
+    background: #b8b2b2;
+    color: black;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+
+}
+
+/*Home*/
+ .home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+ }
+
+ .home h3{
+    font-size: 2.5rem;
+
+ }
+
+ .home h1{
+    font-size: 5rem;
+
+ }
+
+ .home h1 span{
+
+    color: var(--blue)
+ }
+
+
+ .home p{
+    font-size: 2rem;
+
+    padding: 1rem 0;
+ }
+
+
+
+/*About*/
+.about .row{
+    font-size: 2rem;
+}
+.about {
+  padding: 5rem;
+}
+.about p{
+    font-size: 2rem;
+    width: 100%;
+    margin: 1.5rem auto;
+
+}
+
+.about .row{
+  margin: 1rem 0;
+}
+.about .item{
+  padding: 0.5rem 0;
+  margin: 0.3rem 0;
+}
+
+.about .item-text{
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 600;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.about .item-text span:last-child{
+  position: absolute;
+}
+
+.about .item-text .w-90{
+  margin-left: 85%;
+}
+
+
+
+.progress{
+  margin: 0.8rem 0;
+  border-radius: 10px;
+  height: 16px;
+  width: 100%;
+  background-color: grey;
+  overflow: hidden;
+
+}
+
+.progress-bar100{
+  background: var(--blue);
+  height: 100%;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  width: 100%;
+
+}
+
+.progress-bar95{
+  background: var(--blue);
+  height: 100%;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  width: 95%;
+
+}
+
+.progress-bar80{
+  background: var(--blue);
+  height: 100%;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  width: 80%;
+
+}
+
+.about .row{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 2rem;
+}
+
+
+/*Projects*/
+.projects .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.projects .box-container .box{
+    height: 40rem;
+    width: 40rem;
+    border-radius: 2rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.projects .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.projects .box-container .box:hover img{
+    transform: scale(1.2);
+}
+
+.projects .project-container .project .proj-img{
+  padding: 2rem 2rem;
+  height: 35rem;
+  width: 60rem;
+}
+
+.projects .project-container .project .proj-img:hover{
+  transform: scale(1.05);
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  font-size: 20px
+}
+
+.project {
+  display: flex;
+  width: 100%; /* Ensure each project takes full width */
+  justify-content: space-between; /* Space between image and description */
+  align-items: center;
+  margin: 50px 0; /* Adjust margin as needed */
+}
+
+.project img {
+  width: 50%; /* Adjust image width as needed */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project .project-description {
+  width: 50%; /* Adjust description width as needed */
+  text-align: left; /* Align text to the left */
+}
+
+#msg1{
+  color: var(--blue);
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+}
+
+
+/*Contact form*/
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row .content{
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+
+.contact .row form .box{
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: #3333;
+    color: #0096FF;
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+}
+
+
+.contact .row form .box::placeholder{
+    text-transform: capitalize;
+}
+.contact .row form .message{
+    height: 15rem;
+    resize: none;
+
+}
+
+.contact .row .content .title{
+    text-transform: uppercase;
+
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contact .row .content .info h3{
+    text-transform: none;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.contact .row .content .info h3 i{
+    padding-right: 1rem;
+    color: var(--blue);
+}
+
+#msg{
+  color: var(--blue);
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+}
+
+
+
+
+/* media queries */
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+
+    .home{
+        padding: 1rem 4rem;
+    }
+
+    .projects .box-container .box img{
+        height: 100%;
+        width: 55%;
+        object-fit: cover;
+
+    }
+}
+
+@media (max-width:991px){
+   header{
+    left: -120%;
+
+   }
+
+
+   #menu{
+        display: block;
+   }
+
+   header.toggle{
+     left: 0%;
+   }
+
+   body{
+    padding: 0;
+   }
+
+   projects .project-container .project .proj-img{
+     padding: 2rem 2rem;
+     height: 35rem;
+     width: 40rem;
+   }
+}
+
+@media (max-width:768px){
+    html{
+     font-size: 50%;
+
+    }
+
+    projects .project-container .project .proj-img{
+      padding: 2rem 2rem;
+      height: 25rem;
+      width: 35rem;
+    }
+
+}
+
+ @media (max-width:400px){
+    header{
+     width: 100vw;
+
+    }
+
+    .heading{
+        margin:  0 3rem;
+    }
+
+    .about .row .counter .box {
+        width: 100%;
+    }
+
+    .projects .box-container .box{
+        width: 100%;
+    }
+
+   .contact .row form{
+    margin: 3rem 0;
+   }
+
+   projects .project-container .project .proj-img{
+     padding: 2rem 2rem;
+     height: 25rem;
+     width: 30rem;
+   }
+ }
