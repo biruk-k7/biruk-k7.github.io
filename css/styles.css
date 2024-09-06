@@ -364,22 +364,22 @@ header .navbar ul li a:hover{
 
 .project {
   display: flex;
-  width: 100%; /* Ensure each project takes full width */
-  justify-content: space-between; /* Space between image and description */
+  width: 100%; 
+  justify-content: space-between; 
   align-items: center;
-  margin: 50px 0; /* Adjust margin as needed */
+  margin: 50px 0; 
 }
 
 .project img {
-  width: 50%; /* Adjust image width as needed */
+  width: 50%;
   height: auto;
   object-fit: cover;
   border-radius: 10px;
 }
 
 .project .project-description {
-  width: 50%; /* Adjust description width as needed */
-  text-align: left; /* Align text to the left */
+  width: 50%;
+  text-align: left; 
 }
 
 #msg1{
