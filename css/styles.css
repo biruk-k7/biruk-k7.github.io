@@ -267,7 +267,8 @@ header .navbar ul li a:hover{
 }
 
 .about .item-text .w-90{
-  margin-left: 85%;
+  margin-left: 70%;
+
 }
 
 
@@ -546,7 +547,7 @@ header .navbar ul li a:hover{
 
    projects .project-container .project .proj-img{
      padding: 2rem 2rem;
-     height: 25rem;
-     width: 30rem;
+     height: 25vw;
+     width: 30vw;
    }
  }
